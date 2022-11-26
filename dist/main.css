@@ -1,0 +1,47 @@
+.header-list {
+  display: flex;
+  gap: 2.2rem;
+  list-style: none;
+  font-size: 1.3rem;
+}
+
+.header-list a {
+  text-decoration: none;
+  color: black;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  padding-left: 15rem;
+  box-shadow: 0 2px 10px grey;
+  height: 4rem;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  padding-top: 1.2rem;
+  border-top: 1px solid black;
+}
+
+#movieList {
+  display: grid;
+  gap: var(--g);
+  width: calc(var(--m) * var(--s) + (var(--m) - 1) * var(--g));
+  height: calc(var(--n) * var(--s) + (var(--n) - 1) * var(--g));
+  grid-template-columns: repeat(var(--m), auto);
+
+  --m: 5;
+  --s: 150px;
+  --n: 3;
+}
+
+.movie-pop-up {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 100%;
+  margin: 0;
+}
+
